@@ -1,0 +1,20 @@
+<input
+        type="text"
+        (keyup)="onKeyUp()"
+        (input)="color=$event.target.value"
+        [style.background-color]="color" />
+
+<h1>
+  Kitty-Kat</h1>
+<input
+        type="text"
+        [(ngModel)]="search" >
+<p>
+  Du suchst gerade nach:
+  {{search}}
+</p>
+
+<input type="button" value="Login" (click)="onClick()" />
+<p id="message">
+
+</p>

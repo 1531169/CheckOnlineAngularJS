@@ -2,12 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { BnHomeComponent } from './bn-home/bn-home.component';
+import { BnProfilComponent } from './bn-profil/bn-profil.component';
+import { NavibarComponent } from './navibar/navibar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    BnHomeComponent,
+    BnProfilComponent,
+    NavibarComponent
   ],
   imports: [
     BrowserModule,
@@ -17,4 +24,6 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
