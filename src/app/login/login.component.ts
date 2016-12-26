@@ -1,22 +1,27 @@
 import {Component, OnInit} from '@angular/core';
-import {ElementFinder} from "protractor";
+import {NavigationServiceService} from "../navigation-service.service";
 
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.css']
+    styleUrls: ['./login.component.css'],
+    providers: [NavigationServiceService]
 })
 
 export class LoginComponent implements OnInit {
+    public avatare = <Object>[];
 
-    constructor() {
+    public testvar: String;
+
+    constructor(private service: NavigationServiceService) {
+        this.service.getAvatars().subscribe(avas => this.avatare = avas);
     }
 
     ngOnInit() {
+
     }
 
     public color: string;
-    public goon = "...";
 
     onKeyUp() {
         console.log('keyup: ' +
