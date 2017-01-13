@@ -4,5 +4,18 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  debug: true,
+
+  log(message?:any, ... optionalParams) {
+    if(!this.debug) {
+      return;
+    }
+
+    if(optionalParams.length > 0) {
+      console.log(message, optionalParams);
+    } else {
+      console.log(message);
+    }
+  }
 };
