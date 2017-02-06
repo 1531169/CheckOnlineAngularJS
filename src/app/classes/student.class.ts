@@ -2,15 +2,16 @@ export class Student {
     constructor(public _id: number,
                 public forename: string,
                 public surname: string,
-                public studyGroups: StudyGroup[],
+                public studyGroups: StudyGroup,
                 public formteacher: string,
-                public school: School[],
+                public school: School,
                 public avatarId: number) {
     }
 }
 
 export class StudyGroup {
-    constructor(public imageUrl: string,
+    constructor(public clas: string,
+                public imageUrl: string,
                 public imageUrlInactive: string,
                 public imageUrlBig: string) {
     }

@@ -1,8 +1,3 @@
-<!--
-                    <li><a routerLink="/studentcompetence" routerLinkActive="active">Page 1-1</a></li>
-                    <li><a routerLink="/chapter/3" routerLinkActive="active">Page 1-2</a></li>
-                -->
-
 <nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -19,20 +14,26 @@
                     <a dropdownToggle id="navCompetences"></a>
                     <ul dropdownMenu>
                         <span>
-                            Bla
+                            Hier kommen weitere Informationen rein..
                         </span>
                         <li *ngFor="let chapter of chapters"
-                            id="chapter{{chapter._id}}"><a>{{chapter.name}}</a></li>
+                            id="chapter{{chapter._id}}"(click)="onSelect(chapter)"><a>{{chapter.name}}</a></li>
                     </ul>
                 </li>
                 <li dropdown>
                     <a dropdownToggle id="navFoerderplan"></a>
                     <ul dropdownMenu>
+                        <span>
+                            Hier kommen weitere Informationen rein..
+                        </span>
                     </ul>
                 </li>
                 <li dropdown>
                     <a dropdownToggle id="navMyCompetences"></a>
                     <ul dropdownMenu>
+                        <span>
+                            Hier kommen weitere Informationen rein..
+                        </span>
                     </ul>
                 </li>
             </ul>
@@ -48,6 +49,41 @@
                         </li>
                     </ul>
                 </li>
+                <li dropdown>
+                    <a dropdownToggle id="navHelp"></a>
+                    <ul dropdownMenu>
+                        <span>
+                            Hier kommen weitere Informationen rein..
+                        </span>
+                    </ul>
+                </li>
+                <li>
+                    |
+                </li>
+                <li dropdown>
+                    <a dropdownToggle id="navClass"></a>
+                    <ul dropdownMenu>
+                        <span>
+                            Hier kommen weitere Informationen rein..
+                        </span>
+                    </ul>
+                </li>
+                <li dropdown>
+                    <a dropdownToggle id="navSchool"></a>
+                    <ul dropdownMenu>
+                        <span>
+                            Hier kommen weitere Informationen rein..
+                        </span>
+                    </ul>
+                </li>
+                <li dropdown>
+                <a dropdownToggle id="navAvatar"></a>
+                <ul dropdownMenu>
+                        <span>
+                            Hier kommen weitere Informationen rein..
+                        </span>
+                </ul>
+            </li>
             </ul>
         </div>
     </div>

@@ -57,6 +57,14 @@
     background: url('../../images/achievedCompetences-active.png');
 }
 
+#navHelp {
+    background: url('../../images/help-inactive.png') transparent no-repeat;
+}
+
+#navHelp:hover, #navHelp:focus, .open > #navHelp {
+    background: url('../../images/help-active.png');
+}
+
 #navLogout {
     background: url('../../images/logout-iactive.png') transparent no-repeat;
 }
