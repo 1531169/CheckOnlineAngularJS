@@ -99,21 +99,16 @@
     }
 }
 
-/*
-    CHAPTER COLORS
-*/
-li#chapter1 > a {
-    background-color: #79ab2e;
-}
 
-li#chapter1 > a:hover {
-    background-color: #a1c153;
+nav li > a {
+    background-color: #001a3a;
+    color: #4565ad;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-li#chapter2 > a {
-    background-color: #c6d54f;
-}
-
-li#chapter2 > a:hover {
-    background-color: #dbe283;
+nav li > a:hover {
+    background-color: #8da6d6;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
 }
