@@ -33,17 +33,17 @@ export class AuthenticationService {
     }
 
     async login(username, password) {
-        var headers = new Headers();
-        headers.append("Content-Type", "application/json");
-        await this.http.put(restUrls.getLoginUrl(),
-            JSON.stringify({username, password}),
-            {headers: headers})
-            .map((res: Response) => res.json())
-            .subscribe(
-                data => this.handleSuccess(data, this),
-                this.handleError
-            );
-    }
+    var headers = new Headers();
+    headers.append("Content-Type", "application/json");
+    await this.http.put(restUrls.getLoginUrl(),
+        JSON.stringify({username, password}),
+        {headers: headers})
+        .map((res: Response) => res.json())
+        .subscribe(
+            data => this.handleSuccess(data, this),
+            this.handleError
+        );
+}
 
     logout() {
         localStorage.removeItem(this.localStorageTokenID);
